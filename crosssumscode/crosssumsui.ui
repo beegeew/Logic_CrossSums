@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CrossSumsUI</class>
+ <widget class="QMainWindow" name="CrossSumsUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>580</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>580</width>
+    <height>620</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>580</width>
+    <height>620</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Gen's Cross Sums</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../favicon.ico</normaloff>../favicon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>580</width>
+     <height>560</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>580</width>
+     <height>580</height>
+    </size>
+   </property>
+   <widget class="QPushButton" name="Clear">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>550</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear Boxes</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../gnome_session_reboot.ico</normaloff>../gnome_session_reboot.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Solve">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>550</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Solve!</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../gnome_color_chooser.ico</normaloff>../gnome_color_chooser.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Save">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>550</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save Clues</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../1311731968_Gnome-Document-Save-As-64.ico</normaloff>../1311731968_Gnome-Document-Save-As-64.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>562</width>
+      <height>492</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ebrima</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="rowCount">
+     <number>14</number>
+    </property>
+    <property name="columnCount">
+     <number>14</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>40</number>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>0</number>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>35</number>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>0</number>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QRadioButton" name="PuzEasy">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Easy Puzzle</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="PuzMed">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>10</y>
+      <width>91</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Medium Puzzle</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="PuzHard">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>10</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hard Puzzle</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>580</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCross_Sums_Solver">
+    <property name="title">
+     <string>Cross Sums Solver</string>
+    </property>
+    <addaction name="actionClear_Entries"/>
+    <addaction name="actionSave_Clues"/>
+    <addaction name="actionSolve"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionWhat_is_Cross_Sums"/>
+    <addaction name="actionVersion_0_2"/>
+   </widget>
+   <addaction name="menuCross_Sums_Solver"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <action name="actionClear_Entries">
+   <property name="icon">
+    <iconset>
+     <normaloff>../gnome_session_reboot.ico</normaloff>../gnome_session_reboot.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Clear Boxes</string>
+   </property>
+  </action>
+  <action name="actionSolve">
+   <property name="icon">
+    <iconset>
+     <normaloff>../gnome_color_chooser.ico</normaloff>../gnome_color_chooser.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Solve</string>
+   </property>
+  </action>
+  <action name="actionWhat_is_Cross_Sums">
+   <property name="icon">
+    <iconset>
+     <normaloff>../help_and_support.ico</normaloff>../help_and_support.ico</iconset>
+   </property>
+   <property name="text">
+    <string>What is Cross Sums?</string>
+   </property>
+   <property name="toolTip">
+    <string>Need help on how to play? Click me!</string>
+   </property>
+   <property name="statusTip">
+    <string>Need help on how to play? Click me!</string>
+   </property>
+   <property name="shortcut">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionVersion_0_2">
+   <property name="text">
+    <string>Version 0.0.01</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>../gnome_application_exit.ico</normaloff>../gnome_application_exit.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSave_Clues">
+   <property name="icon">
+    <iconset>
+     <normaloff>../1311731968_Gnome-Document-Save-As-64.ico</normaloff>../1311731968_Gnome-Document-Save-As-64.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Save Clues</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>PuzEasy</sender>
+   <signal>clicked()</signal>
+   <receiver>CrossSumsUI</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>235</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PuzMed</sender>
+   <signal>clicked()</signal>
+   <receiver>CrossSumsUI</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>225</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>235</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PuzHard</sender>
+   <signal>clicked()</signal>
+   <receiver>CrossSumsUI</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>370</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>235</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
